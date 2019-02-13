@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!-- Then we include skeleton: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Artificial inteligernce for Medical Diagnostics</h1>
+        
+        <h2>
+          Why this subject ?
+        </h2>
+        <p>
+        The Institute of Medicine at the National Academies of Science, Engineering and Medicine reports that “diagnostic errors contribute to approximately 10 percent of patient deaths,” and also account for 6 to 17 percent of hospital complications. It is important to note that physician performance is typically not the direct cause of diagnostic errors. In fact, researchers attribute the cause of diagnostics errors to a variety of factors including:
+
+        Inefficient collaboration and integration of health information technologies (Health IT)
+        Gaps in communication among clinicians, patients and their families
+        A healthcare work system which, by design, does not adequately support the diagnostic process
+        To provide additional context, a review of 25 years of malpractice claims payouts in the U.S. by Johns Hopkins researchers showed that diagnostic error claims had a higher occurrence in outpatient (68.8 percent) vs. inpatient (31.2 percent) settings. However, those which occurred in an inpatient setting were roughly 11.5 percent more likely to be lethal. Total payouts over the 25 period amounted to a substantial sum of $38.8 billion.
+
+        To address these challenges many researchers and companies are leveraging artificial intelligence to improve medical diagnostics.
+        </p>
+      </div>
+      
+      <h2>
+        Real application 
+      </h2>
+      
+      <div class="row">
+        Stanford University researchers have trained an algorithm to diagnose skin cancer using deep learning, specifically deep convolutional neural networks (CNNs). The algorithm was trained to detect skin cancer or melanoma using “130,000 images of skin lesions representing over 2,000 different diseases.”
+        In the U.S., there are approximately 5.4 million new skin cancer diagnoses each year and early detection is critical for a greater rate of survival. For example, early detection correlates with a 97 percent five-year survival rate but quickly decreases with later stages, hitting the 15-20 percent margin at stage IV. In 2017, an estimated 9,730 people will die of melanoma and one person dies of melanoma every 54 minutes.
+        To provide context, a visual examination is the first step of a skin cancer diagnosis and a dermatologist inspects a lesion of interest with the assistance of a dermatoscope (handheld microscope). If the dermatologist believes the lesion is indeed cancerous, or if the initial evaluation is inconclusive, the dermatologist will follow up with a biopsy.
+        Stanford’s deep learning algorithm was tested against 21 board-certified dermatologists who reviewed a reported 370 images and were asked if “they would proceed with biopsy or treatment, or reassure the patient” based on each image. Results showed that the algorithm had the same ability as the 21 dermatologists in determining the best course of action across all images.
+        Skin Cancer Deep Learning. These are promising results, however the research team acknowledges that additional, rigorous testing is required before the algorithm can be integrated into clinical practice. Our research did not provide evidence of any clinical applications at this time.
+      </div>
+      
+      <a href="https://cs.stanford.edu/people/esteva/nature/" > Stanford Article on cancer classification</a>
+      
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IvmLEq9piJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+      <br>
+      
+      <div class="row">
+        <h2>
+          How to do it with ML5.js
+        </h2>
+        
+        <p>
+          ML5.js is based on the very powerfull Machine Learning engine Tensor Flow made by Google. 
+          ML5.js has a feature to classifie image: ImageClassifier()
+          We can use neural networks to recognize the content of images. 
+          ml5.imageClassifier() is a method to create an object that classifies an image using a pre-trained model.
+          We ll do this to classifie images of melanome
+        </p>
+        
+        <a href="https://github.com/ml5js/ml5-library/issues/15">People talking on Github about how to do image classification with ML5.js</a>
+        <br>
+        <a href="http://softwarestudies.projects.cavi.au.dk/index.php/Machine_Learning_Experiments">Machine_Learning_Experiments</a>
+        <br>
+        <a href="https://towardsdatascience.com/introduction-to-ml5-js-3fe51d6a4661">Tuto to do image classification</a>
+        <br>
+        <a href="https://thekevinscott.com/image-classification-with-javascript/">Great ressource here too</a>
+      </div>
+    </div>
+  </body>
+</html>
